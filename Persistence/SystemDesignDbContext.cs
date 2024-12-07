@@ -1,8 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Persistence
+namespace Persistence;
+
+public class SystemDesignDbContext:DbContext
 {
-    public class SystemDesignDbContext:DbContext
-    {
-    }
 }
