@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using TicketManagement.Application.Contracts.Persistence;
-using TicketManagement.Persistence.Repositories;
+using Application.Contracts.Persistence;
+using Persistence.Repositories;
 
 namespace  Persistence;
 

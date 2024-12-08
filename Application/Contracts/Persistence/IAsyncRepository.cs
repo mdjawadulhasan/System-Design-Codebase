@@ -1,4 +1,4 @@
-namespace TicketManagement.Application.Contracts.Persistence;
+namespace Application.Contracts.Persistence;
 
 public interface IAsyncRepository<T> where T: class
 {

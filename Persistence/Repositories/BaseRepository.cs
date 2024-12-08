@@ -1,8 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Persistence;
-using TicketManagement.Application.Contracts.Persistence;
+using Application.Contracts.Persistence;
 
-namespace TicketManagement.Persistence.Repositories;
+namespace Persistence.Repositories;
 
 public class BaseRepository<T> : IAsyncRepository<T> where T : class
 {
