@@ -1,4 +1,7 @@
 
+using API.Repository;
+using API.Service;
+
 namespace ParkingLot
 {
     public class Program
@@ -13,6 +16,12 @@ namespace ParkingLot
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddScoped<IParkingRepository, ParkingRepository>();
+            builder.Services.AddScoped<IFeeCalculator, HourlyFeeCalculator>();
+            builder.Services.AddScoped<IVehicleParking, ParkingService>();
+            builder.Services.AddScoped<IParkingManagement, ParkingService>();
+
 
             var app = builder.Build();
 
